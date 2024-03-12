@@ -144,7 +144,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px;
 }
 .navigation .control img, i{
     z-index: 2;
@@ -233,7 +233,6 @@ input #songRange{
     .control{
         display: flex;
         align-items: center;
-        margin-left: -2px;
 
     }
     .control i{
@@ -275,7 +274,7 @@ input #songRange{
     .control{
         display: flex;
         align-items: center;
-        margin-left: -55px;
+        align-content: center;
     }
     .songBox img{
         width: 30px;
@@ -322,7 +321,7 @@ input #songRange{
     .control{
         display: flex;
         align-items: center;
-        margin-left: -16px;
+        margin-left: -18px;
     }
     .control i{
         font-size: 23px;
