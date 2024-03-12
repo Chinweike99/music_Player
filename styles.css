@@ -152,6 +152,12 @@ button{
 .navigation #selectSong, #backBtn{
     z-index: 2;
 }
+#backBtn button img{
+    transition: all 0.7s ease;
+}
+#selectSong button img{
+    transition: all 0.7s ease;
+}
 .control i{
     font-size: 33px;
     width: 55px;
@@ -194,6 +200,62 @@ input #songRange{
     border-radius: 50%;
     border: 3px solid #fff;
 }
-@media only screen and (max-width: 500px){
-
+@media only screen and (max-width: 500px) {
+    .navigation{
+        width: 90%;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #4bd4ec, #c15ce9);
+        text-align: center;
+    }
+    .container2{
+        width: 90%;
+    }
+    .songBox img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 20px;
+        border: 3px solid #fff;
+        z-index: 2;
+    }
+    #songPlay{
+        margin-top: 10px;
+        font-size: 17px;            
+        color: #124d75;
+        font-family: cursive;
+        font-weight: 600;
+        margin: 20px;
+        text-decoration: underline;
+        z-index: 2;
+        position: relative;
+    
+    }
+    .control{
+        display: flex;
+        align-items: center;
+        margin-left: -10px;
+    }
+    .control i{
+        font-size: 23px;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #7be9e9;
+        background: #fff;
+    }
+    .navigation .control img{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid #7be9e9;
+        background: #fff;
+    }
+    .hide{
+        width: 80%;
+    }
 }
