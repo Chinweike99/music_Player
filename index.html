@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale-1=1.0">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/9b776a6ba6.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="container2">
+                <ul id="songList" class="hide">
+                    <li class="tracks">
+                        <p>Bazuka-Berry Diamond</p>
+                        <img src="images/cap2.jpg" alt="">
+                    </li>
+                    <li class="tracks">
+                        <p>1964-Berry Diamond</p>
+                        <img src="images/cap3.jpg" alt="">
+                    </li>
+                    <li class="tracks">
+                        <p>Saphire-Berry Diamond</p>
+                        <img src="images/cap4.jpg" alt="">
+                    </li>
+                    <li class="tracks">
+                        <p>Hiccup-Berry Diamond</p>
+                        <img src="images/cap5.jpg" alt="">
+                    </li>
+                    <li class="tracks">
+                        <p>Lifeline-Berry Diamond</p>
+                        <img src="images/cap6.jpg" alt="">
+                    </li>
+                </ul>
+                <div id="background2" class="backgroun2">
+                    
+                </div>
+                <div class="navigation">
+                    <nav id="navbar">
+                        <div id="backBtn" >
+                            <button onclick="mvBack()"><img id="backIcon" src="images/chevron-left-solid.svg" alt=""></button>
+                        </div>
+                        
+                        <div id="selectSong">
+                            <button class="btn" onclick="toggleSongList()"><img id="barIcon" src="images/bars-solid.svg" alt=""></button>
+                        </div>
+                    </nav>
+                    <div class="songBox">
+                        <img src="images/cap8.jpg" alt="">
+                    </div>
+                    <p id="songPlay">Select song</p>
+
+                    <div id="song">
+                        <audio id="song1">
+                            <source src="songs/Ayaka_Ozubulu_-_Turn_By_Turn__Official_Audio_(128k).m4a" type="audio/mpeg">
+                        </audio>
+                        <audio id="song2">
+                            <source src="songs/2baba_Kiss_Of_Life.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio id="song3">
+                            <source src="songs/Berry _ Sapphire.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio id="song4">
+                            <source src="songs/Who_Am_I___Casting_Crowns_Lyrics(128k).m4a" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <input type="range" value="0" id="songRange">
+                    <div class="control">
+                        <img id="bIcon" src="images/backward-step-solid.svg" alt="">
+                        <i onclick="pausePlay()" class="fa-solid fa-play" class="playSong" id="playMusic"></i>
+                        <img id="nIcon" src="images/forward-step-solid.svg" alt="">
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
