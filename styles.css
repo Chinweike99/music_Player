@@ -275,7 +275,7 @@ input #songRange{
     .control{
         display: flex;
         align-items: center;
-        margin-left: -15px;
+        margin-left: -55px;
     }
     .songBox img{
         width: 30px;
