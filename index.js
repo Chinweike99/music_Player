@@ -55,6 +55,12 @@ function playNextSong(){
     songs[currentSong].currentTime = 0;
 }
 
+songs.forEach(function(track){
+    track.onended = function(){
+        playNextSong();
+    };
+});
+
 function playPreviousSong(){
     songs[currentSong].pause();
     currentSong = (currentSong - 1 + songs.length) % songs.length;
@@ -99,7 +105,7 @@ song.onloadedmetadata = function(){
 if(song.play()){
     setInterval(()=>{
         songRange.value = song.currentTime;
-    }, 600)
+    }, 500)
 }
 
 // function to show songs onclicking button
